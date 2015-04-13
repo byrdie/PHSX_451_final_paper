@@ -48,6 +48,8 @@
 \newcommand{\dtder}[2]{\frac{\dd^2 #1}{\dd #2^2}}
 \newcommand{\dpder}[2]{\frac{\partial^2 #1}{\partial #2^2}}
 \newcommand{\intas}{ \int_{-\infty}^\infty}
+\newcommand{\npar}{\\ \\ \noindent}
+
 
 \begin{document}
 
@@ -57,10 +59,32 @@
 
 \section{Introduction}
 On July 4th 2012, CERN hosted a press conference to announce their findings from the Large Hadron Collider (LHC) \cite{website:higgs_press}. While the world waited with baited breath, CERN researchers confirmed they had identified a particle with mass 125 GeV \cite{new_higgs}. This discovery confirmed the existence of the Higgs boson, a particle that has been postulated to exist for at least 60 years \cite{higgs_predict}. 
-
+\npar
 The LHC utilizes two complementary general-purpose detectors: ATLAS (A Toroidal LHC ApparatuS) and CMS (Compact Muon Solenoid). The two detectors work independently of one another, and in the case of the Higgs particle, provide independent verification of discovery [Source??]. In this paper, we will explore the engineering strategies of the CMS detector that enabled this unique discovery, and the computational techniques used to validate the existence of the Higgs.
 
-\bibliographystyle{plain}
+
+\section{CMS Collaboration Results}
+\subsection{Interpreting CMS Data}
+The existence of the Higgs boson can not be detected directly, rather it is identified through its decay products \cite{higgs_search}. These decay products are not only produced in the Higgs decay, but are created through the decay of other particles. The decay products produced in reactions of previously discovered particles are known as the ``background'' and the search for the Higgs must show that the rates of the pertinent decays are significantly higher than the background rates of decay.
+\npar
+The CMS collaboration selected five decay modes in their search for the Higgs: $H\rightarrow \gamma \gamma$; $H \rightarrow ZZ \rightarrow 4\ell$; $H \rightarrow WW \rightarrow 2\ell2\nu$; $H \rightarrow \tau \tau$; and $H \rightarrow bb$. These modes were selected because they provided the most resolution of the mass of the Higgs, and consequently give the best estimate for the value of the Higgs' mass \cite{new_higgs}. In this paper, we will be exploring the CMS collaboration's analysis of the $H \to ZZ$ decay mode, and specific technical information as to how their result was calculated.
+\subsection{The $H \to ZZ$ Decay Mode}
+The Higgs has two fully leptonic decay modes
+\begin{align}
+ &H \to WW \to \ell^+\nu \ell^-  \overline{\nu}
+\intertext{and}
+&H \to ZZ \to \ell^+ \ell^- \ell^+ \ell^- \label{golden}
+\intertext{where}
+& \ell = [e \; (\text{electron}), \; \mu \; (\text{muon})] \quad \text{and} \quad \nu = (\text{neutrino}) \nonumber
+\end{align}
+The decay mode (\ref{golden}) is known as the 'golden' channel for discovery. This is due to the fact that the entire decay chain can be fully reconstructed with high resolution \cite{higgs_hunt} because the invariant mass of the electron and muon decay products are easily resolved by the CMS detector \cite{golden_higgs}.
+\section{Design of the Compact Muon Solenoid}
+\section{Computational Techniques}
+\section{Conclusion}
+
+
+
+\bibliographystyle{unsrt}
 \bibliography{sources}
 
 \end{document}

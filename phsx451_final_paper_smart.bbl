@@ -20,4 +20,27 @@ P.W. Higgs.
 \newblock
   \url{http://ac.els-cdn.com.proxybz.lib.montana.edu/0031916364911369/1-s2.0-0031916364911369-main.pdf?_tid=421a6d50-e092-11e4-9fae-00000aab0f6b&acdnat=1428788130_f08d5fb23e00c9c41da7bcc724435630}.
 
+\bibitem{higgs_search}
+J.F. Gunion, G.L. Kane, and Jose Wudka.
+\newblock Search techniques for charged and neutral intermediate-mass {Higgs}
+  bosons.
+\newblock {\em Nuclear Physics B}, 299(2):231--278, 1988.
+\newblock
+  \url{http://deepblue.lib.umich.edu/bitstream/handle/2027.42/27338/0000363.pdf?sequence=1&isAllowed=y}.
+
+\bibitem{higgs_hunt}
+Dr.~Francesco Pandolfi.
+\newblock {\em Search for the Standar Model Higgs Boson in the $H \to ZZ \to
+  \ell^+ \ell^- q\overline{q} $}.
+\newblock PhD thesis, Sapienza Universit\'a di Roma, Rome, Italy, 2013.
+\newblock
+  \url{http://download-v2.springer.com.proxybz.lib.montana.edu/static/pdf/508/bok%253A978-3-319-00903-2.pdf?token2=exp=1428869474~acl=%2Fstatic%2Fpdf%2F508%2Fbok%25253A978-3-319-00903-2.pdf*~hmac=dff17cc20272e6194a7879d818e87c91e2c8e99d40d128b3405da58fc5137222}.
+
+\bibitem{golden_higgs}
+J.S. Gainer, K.~Kumar, I.~Low, and R.~Vega-Morales.
+\newblock Improving the sensitivity of {Higgs} boson searches in the golden
+  channel.
+\newblock {\em Journal of High Energy Physics}, 2011(11), November 2011.
+\newblock \url{http://arxiv.org/pdf/1108.2274v2.pdf}.
+
 \end{thebibliography}
