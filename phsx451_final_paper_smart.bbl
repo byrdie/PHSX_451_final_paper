@@ -20,6 +20,13 @@ P.W. Higgs.
 \newblock
   \url{http://ac.els-cdn.com.proxybz.lib.montana.edu/0031916364911369/1-s2.0-0031916364911369-main.pdf?_tid=421a6d50-e092-11e4-9fae-00000aab0f6b&acdnat=1428788130_f08d5fb23e00c9c41da7bcc724435630}.
 
+\bibitem{lhc_combo}
+LHC Higgs~Combination Group.
+\newblock Procedure for the {LHC} {Higgs} boson search combination in {Summer}
+  2011.
+\newblock Technical report, CERN, August 2011.
+\newblock \url{http://cds.cern.ch/record/1379837/files/NOTE2011_005.pdf}.
+
 \bibitem{higgs_search}
 J.F. Gunion, G.L. Kane, and Jose Wudka.
 \newblock Search techniques for charged and neutral intermediate-mass {Higgs}
@@ -42,5 +49,12 @@ J.S. Gainer, K.~Kumar, I.~Low, and R.~Vega-Morales.
   channel.
 \newblock {\em Journal of High Energy Physics}, 2011(11), November 2011.
 \newblock \url{http://arxiv.org/pdf/1108.2274v2.pdf}.
+
+\bibitem{higgs_angles}
+A.~De~R\'ujula, Joseph Lykken, Maurizio Pierini, Christopher Rogan, and Maria
+  Spiropulu.
+\newblock Higgs boson look-alikes at the {LHC}.
+\newblock {\em Phys. Rev. D}, 82(1):013003, Jul 2010.
+\newblock \url{http://link.aps.org/doi/10.1103/PhysRevD.82.013003}.
 
 \end{thebibliography}

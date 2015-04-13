@@ -60,31 +60,75 @@
 \section{Introduction}
 On July 4th 2012, CERN hosted a press conference to announce their findings from the Large Hadron Collider (LHC) \cite{website:higgs_press}. While the world waited with baited breath, CERN researchers confirmed they had identified a particle with mass 125 GeV \cite{new_higgs}. This discovery confirmed the existence of the Higgs boson, a particle that has been postulated to exist for at least 60 years \cite{higgs_predict}. 
 \npar
-The LHC utilizes two complementary general-purpose detectors: ATLAS (A Toroidal LHC ApparatuS) and CMS (Compact Muon Solenoid). The two detectors work independently of one another, and in the case of the Higgs particle, provide independent verification of discovery [Source??]. In this paper, we will explore the engineering strategies of the CMS detector that enabled this unique discovery, and the computational techniques used to validate the existence of the Higgs.
+The LHC utilizes two complementary general-purpose detectors: ATLAS (A Toroidal LHC ApparatuS) and CMS (Compact Muon Solenoid). The two detectors work independently of one another, and in the case of the Higgs particle, provide independent verification of discovery \cite{lhc_combo}. In this paper, we will explore the engineering strategies of the CMS detector that enabled this unique discovery, and the computational techniques used to validate the existence of the Higgs.
 
 
 \section{CMS Collaboration Results}
 \subsection{Interpreting CMS Data}
 The existence of the Higgs boson can not be detected directly, rather it is identified through its decay products \cite{higgs_search}. These decay products are not only produced in the Higgs decay, but are created through the decay of other particles. The decay products produced in reactions of previously discovered particles are known as the ``background'' and the search for the Higgs must show that the rates of the pertinent decays are significantly higher than the background rates of decay.
 \npar
-The CMS collaboration selected five decay modes in their search for the Higgs: $H\rightarrow \gamma \gamma$; $H \rightarrow ZZ \rightarrow 4\ell$; $H \rightarrow WW \rightarrow 2\ell2\nu$; $H \rightarrow \tau \tau$; and $H \rightarrow bb$. These modes were selected because they provided the most resolution of the mass of the Higgs, and consequently give the best estimate for the value of the Higgs' mass \cite{new_higgs}. In this paper, we will be exploring the CMS collaboration's analysis of the $H \to ZZ$ decay mode, and specific technical information as to how their result was calculated.
+The CMS collaboration selected five of the most sensitive decay modes in the low-mass region ($m_H = 110-160 \; \text{GeV}$, where $m_H$ is the invariant mass of the Higgs boson) their search for the Higgs. Two decay modes provided high mass resolution: $H\rightarrow \gamma \gamma$ and $H \rightarrow ZZ \rightarrow 4\ell$; while three other modes only provided low mass resolution: $H \rightarrow WW \rightarrow 2\ell2\nu$; $H \rightarrow \tau \tau$; and $H \rightarrow bb$. The $ZZ$ and $\gamma \gamma$ modes are important because they provide a excellent resolution (1-2 GeV) of the invariant mass of the decay products, and consequently give the best estimate for the value of the Higgs' mass \cite{new_higgs}. In this paper, we will be exploring the CMS collaboration's analysis of the $H \to ZZ$ decay mode, and specific technical information as to how their result was calculated.
 \subsection{The $H \to ZZ$ Decay Mode}
 The Higgs has two fully leptonic decay modes
 \begin{align}
- &H \to WW \to \ell^+\nu \ell^-  \overline{\nu}
+ &H \to WW \to \ell^+\nu \; \ell^- \; \overline{\nu}
 \intertext{and}
 &H \to ZZ \to \ell^+ \ell^- \ell^+ \ell^- \label{golden}
 \intertext{where}
 & \ell = [e \; (\text{electron}), \; \mu \; (\text{muon})] \quad \text{and} \quad \nu = (\text{neutrino}) \nonumber
 \end{align}
-The decay mode (\ref{golden}) is known as the 'golden' channel for discovery. This is due to the fact that the entire decay chain can be fully reconstructed with high resolution \cite{higgs_hunt} because the invariant mass of the electron and muon decay products are easily resolved by the CMS detector \cite{golden_higgs}.
+The decay mode (\ref{golden}) is known as the 'golden' channel for discovery.  This is due to the fact that the entire decay chain can be fully reconstructed with high resolution \cite{higgs_hunt} because the invariant mass of the electron and muon decay products are easily resolved by the CMS detector \cite{golden_higgs}. The high resolution of the golden channel compared to other decay modes comes with a price: the branching ratio of the $ Z \to \ell^+ \ell^- $ is only 3.37\%, so only 0.5\% of the Higgs bosons which decay via the $ZZ$ channel will decay further into the golden channel\cite{higgs_hunt}. Furthermore, the background signals from quark-antiquark and gluon-gluon processes produce topologically similar events, obscuring possible Higgs detections \cite{new_higgs}.
+\npar
+A graph depicting the evidence of a Higgs boson with a mass of 125 GeV via the $ZZ$ channel is shown in Figure \ref{HtoZZ}. The CMS collaboration utilizes several techniques to minimize the contribution of the background signals. Other than the irreducible quark-antiquark and gluon-gluon processes, there are several background signals that can be minimized:
+\begin{align}
+& Z + b \overline{b}, \\
+& Z + t \overline{t}, \\
+& Z + \text{jets}, \\
+\intertext{and}
+& WZ + \text{jets} \cite{new_higgs}.
+\end{align}
+the strategies for eliminating these background processes will be further discussed in Section \ref*{comp_tech}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{images/HtoZZ}
+\caption{Distribution depicting the four-lepton invariant mass for the CMS collaboration's $ZZ \to 4 \ell$ analysis. The points represent data gathered by the CMS experiment, the filled histograms represent the predicted four-lepton background signal, and the red histogram represents the predicted four-lepton signal for the Higgs boson with a mass of 125 GeV. The inset distribution represents the same plot after the background events have been minimized.}
+\label{HtoZZ}
+\end{figure}
+
+The kinematics of the $H \to ZZ \to 4 \ell$ system can be solved completely in the rest frame of the Higss using only seven parameters, the invariant masses of the lepton pairs and five angles \cite{new_higgs}, known as Cabibbo-Maksymowicz angles:
+\begin{table}
+\centering
+\begin{tabular}{|c|l|}
+\hline
+Angle & Description \\ \hline
+$\Theta$ & The polar angle of the initial-state partons in the H rest frame. \\ & Measured from the positive z axis (along the anti-clockwise beam direction) \\ \hline
+$\theta_1$ & The polar decay angle of the $\ell_1^-$ in the $Z_1$ rest frame. \\ \hline
+$$  
+\end{tabular}
+\end{table}
+
+\begin{description}
+\item[$\Theta$] The polar angle of the initial-state partons in the H rest frame. Measured from the positive z axis (along the anti-clockwise beam direction)
+\end{description}
+\cite{higgs_angles}
+
 \section{Design of the Compact Muon Solenoid}
 \section{Computational Techniques}
+\label{comp_tech}
 \section{Conclusion}
 
 
 
 \bibliographystyle{unsrt}
 \bibliography{sources}
+
+\section{Questions for first draft}
+\begin{enumerate}
+\item Should the sources be organized in the order they were cited, or by author's last name?
+\item In this paper, particles are identified in italics because \LaTeX \; automatically italicizes characters in math mode. Is this standard notation, or should I make an effort to unitalicize particle symbols?
+\item I feel as if I am following the CMS collaborations paper, "Observation of a New Boson at a Mass of 125 Gev with the CMS Experiment at the LHC" too closely, as I have to cite it often. Is this inappropriate for this assignment? Is there a slight modification I can make to my topic to ensure that I don't just restate the work of the CMS collaboration, or is such a situation unavoidable when doing a research paper such as this?
+ 
+\end{enumerate}
 
 \end{document}
