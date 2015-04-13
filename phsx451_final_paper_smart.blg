@@ -3,44 +3,44 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: phsx451_final_paper_smart.aux
 The style file: unsrt.bst
 Database file #1: sources.bib
-You've used 8 entries,
+You've used 9 entries,
             1791 wiz_defined-function locations,
-            501 strings with 5531 characters,
-and the built_in function-call counts, 1559 in all, are:
-= -- 141
-> -- 62
+            508 strings with 5683 characters,
+and the built_in function-call counts, 1708 in all, are:
+= -- 155
+> -- 66
 < -- 0
-+ -- 25
-- -- 17
-* -- 111
-:= -- 275
-add.period$ -- 31
-call.type$ -- 8
-change.case$ -- 8
++ -- 27
+- -- 18
+* -- 120
+:= -- 302
+add.period$ -- 35
+call.type$ -- 9
+change.case$ -- 9
 chr.to.int$ -- 0
-cite$ -- 8
-duplicate$ -- 62
-empty$ -- 150
-format.name$ -- 17
-if$ -- 336
+cite$ -- 9
+duplicate$ -- 70
+empty$ -- 165
+format.name$ -- 18
+if$ -- 368
 int.to.chr$ -- 0
-int.to.str$ -- 8
-missing$ -- 5
-newline$ -- 50
-num.names$ -- 8
+int.to.str$ -- 9
+missing$ -- 6
+newline$ -- 56
+num.names$ -- 9
 pop$ -- 7
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 22
+skip$ -- 26
 stack$ -- 0
 substring$ -- 75
-swap$ -- 7
+swap$ -- 8
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 12
-width$ -- 9
-write$ -- 104
+while$ -- 13
+width$ -- 10
+write$ -- 117

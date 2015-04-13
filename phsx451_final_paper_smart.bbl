@@ -57,4 +57,10 @@ A.~De~R\'ujula, Joseph Lykken, Maurizio Pierini, Christopher Rogan, and Maria
 \newblock {\em Phys. Rev. D}, 82(1):013003, Jul 2010.
 \newblock \url{http://link.aps.org/doi/10.1103/PhysRevD.82.013003}.
 
+\bibitem{cms_design}
+CMS Collaboration.
+\newblock The {CMS} experiment at the {CERN} {LHC}.
+\newblock {\em Journal of Instrumentation}, 3(08), August 2008.
+\newblock \url{http://stacks.iop.org/1748-0221/3/i=08/a=S08004}.
+
 \end{thebibliography}

@@ -58,7 +58,7 @@
 \maketitle
 
 \section{Introduction}
-On July 4th 2012, CERN hosted a press conference to announce their findings from the Large Hadron Collider (LHC) \cite{website:higgs_press}. While the world waited with baited breath, CERN researchers confirmed they had identified a particle with mass 125 GeV \cite{new_higgs}. This discovery confirmed the existence of the Higgs boson, a particle that has been postulated to exist for at least 60 years \cite{higgs_predict}. 
+On July 4th 2012, CERN hosted a press conference to announce their findings from the Large Hadron Collider (LHC) \cite{website:higgs_press}. While the world waited with baited breath, CERN researchers confirmed they had identified a particle with mass 125 GeV \cite{new_higgs}. This discovery implied the existence of the Higgs boson, a particle that has been postulated to exist for at least 60 years \cite{higgs_predict}. 
 \npar
 The LHC utilizes two complementary general-purpose detectors: ATLAS (A Toroidal LHC ApparatuS) and CMS (Compact Muon Solenoid). The two detectors work independently of one another, and in the case of the Higgs particle, provide independent verification of discovery \cite{lhc_combo}. In this paper, we will explore the engineering strategies of the CMS detector that enabled this unique discovery, and the computational techniques used to validate the existence of the Higgs.
 
@@ -77,17 +77,7 @@ The Higgs has two fully leptonic decay modes
 \intertext{where}
 & \ell = [e \; (\text{electron}), \; \mu \; (\text{muon})] \quad \text{and} \quad \nu = (\text{neutrino}) \nonumber
 \end{align}
-The decay mode (\ref{golden}) is known as the 'golden' channel for discovery.  This is due to the fact that the entire decay chain can be fully reconstructed with high resolution \cite{higgs_hunt} because the invariant mass of the electron and muon decay products are easily resolved by the CMS detector \cite{golden_higgs}. The high resolution of the golden channel compared to other decay modes comes with a price: the branching ratio of the $ Z \to \ell^+ \ell^- $ is only 3.37\%, so only 0.5\% of the Higgs bosons which decay via the $ZZ$ channel will decay further into the golden channel\cite{higgs_hunt}. Furthermore, the background signals from quark-antiquark and gluon-gluon processes produce topologically similar events, obscuring possible Higgs detections \cite{new_higgs}.
-\npar
-A graph depicting the evidence of a Higgs boson with a mass of 125 GeV via the $ZZ$ channel is shown in Figure \ref{HtoZZ}. The CMS collaboration utilizes several techniques to minimize the contribution of the background signals. Other than the irreducible quark-antiquark and gluon-gluon processes, there are several background signals that can be minimized:
-\begin{align}
-& Z + b \overline{b}, \\
-& Z + t \overline{t}, \\
-& Z + \text{jets}, \\
-\intertext{and}
-& WZ + \text{jets} \cite{new_higgs}.
-\end{align}
-the strategies for eliminating these background processes will be further discussed in Section \ref*{comp_tech}.
+The decay mode (\ref{golden}) is known as the `golden' channel for discovery.  This is due to the fact that the entire decay chain can be fully reconstructed with high resolution \cite{higgs_hunt} because the invariant mass of the electron and muon decay products are easily resolved by the CMS detector \cite{golden_higgs}. The high resolution of the golden channel compared to other decay modes comes with a price: the branching ratio of the $ Z \to \ell^+ \ell^- $ is only 3.37\%, so only 0.5\% of the Higgs bosons which decay via the $ZZ$ channel will decay further into the golden channel\cite{higgs_hunt}. Furthermore, the background signals from quark-antiquark and gluon-gluon processes produce topologically similar events, obscuring possible Higgs detections \cite{new_higgs}.
 
 \begin{figure}[h!]
 \centering
@@ -96,24 +86,61 @@ the strategies for eliminating these background processes will be further discus
 \label{HtoZZ}
 \end{figure}
 
-The kinematics of the $H \to ZZ \to 4 \ell$ system can be solved completely in the rest frame of the Higss using only seven parameters, the invariant masses of the lepton pairs and five angles \cite{new_higgs}, known as Cabibbo-Maksymowicz angles:
-\begin{table}
+A graph depicting the evidence of a Higgs boson with a mass of 125 GeV via the $ZZ$ channel is shown in Figure \ref{HtoZZ}. The CMS collaboration utilizes several techniques to minimize the contribution of the background signals. Other than the irreducible quark-antiquark and gluon-gluon processes, there are several background signals that can be minimized:
+\begin{align}
+& Z + b \overline{b}, \\
+& Z + t \overline{t}, \\
+& Z + \text{jets}, \qquad \text{and}\\
+& WZ + \text{jets} \cite{new_higgs}.
+\end{align}
+the strategies for eliminating these background processes will be further discussed in Section \ref*{comp_tech}.
+\npar
+The kinematics of the $H \to ZZ \to 4 \ell$ system can be solved completely in the rest frame of the Higgs using only seven parameters: the invariant masses of the lepton pairs and five angles \cite{new_higgs}, known as Cabibbo-Maksymowicz angles\cite{higgs_angles}. These angles are defined in Table \ref{angle_table} and Figure \ref{angle_fig}. 
+\begin{table}[H]
 \centering
 \begin{tabular}{|c|l|}
 \hline
-Angle & Description \\ \hline
+Angle & Description \\ \hline \hline
 $\Theta$ & The polar angle of the initial-state partons in the H rest frame. \\ & Measured from the positive z axis (along the anti-clockwise beam direction) \\ \hline
 $\theta_1$ & The polar decay angle of the $\ell_1^-$ in the $Z_1$ rest frame. \\ \hline
-$$  
+$\phi_1$ & The azimuthal decay angle of the $\ell_1^-$ in the $Z_1$ rest frame. \\ \hline  
+$\theta_2$ & The polar decay angle of the $\ell_2^-$ in the $Z_2$ rest frame. \\ \hline
+$\phi_2$ &  The azimuthal decay angle of the $\ell_2^-$ in the $Z_2$ rest frame. \\ \hline
 \end{tabular}
+\caption{The five Cabibbo-Maksymowicz angles in the $H \to ZZ$ decay mode, and their definitions \cite{higgs_angles}.}
+\label{angle_table}
 \end{table}
 
-\begin{description}
-\item[$\Theta$] The polar angle of the initial-state partons in the H rest frame. Measured from the positive z axis (along the anti-clockwise beam direction)
-\end{description}
-\cite{higgs_angles}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{images/HtoZZ_angles}
+\caption{Visual description of the Cabibbo-Maksymowicz angles in the $H \to ZZ$ decay mode \cite{higgs_angles}.}
+\label{angle_fig}
+\end{figure}
+\noindent
+We now have an understanding of the parameters associated with identifying the Higgs boson via the $H \to ZZ \to 4 \ell$ decay mode. Next we will explore the design of the CMS experiment and identify what techniques are used to capture this data.
 
 \section{Design of the Compact Muon Solenoid}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width = 0.9\textwidth]{images/cms_persp}
+\caption{A cut-away perspective view of the CMS experiment, with each of the major sensors within the experiment identified \cite{cms_design}.}
+\label{cms_persp}
+\end{figure}
+
+\subsection{Overview}
+The CMS experiment is designed to identify approximately 1000 charged particles emerging from the interaction region every 25ns. To ensure that the products of a single interaction are interpreted separately and that two subsequent interaction events don't get confused with one another, the experiment must use high-granularity detectors with good time resolution. This results in a large number of detector channels with very low occupancy, which produce an unprecedented amount of data. With these challenges in mind, the requirements of the experiment are as follows:
+\begin{itemize}
+\item Good muon identification and momentum resolution, with the ability to determine the charge of the muon.
+\item Good charged-particle momentum resolution.
+\item Good electromagnetic energy resolution, with the ability to isolate photons and leptons.
+\item Good missing-transverse-energy and dijet-mass resolution.
+\end{itemize}
+\noindent
+To fulfill these requirements
+
+
 \section{Computational Techniques}
 \label{comp_tech}
 \section{Conclusion}
