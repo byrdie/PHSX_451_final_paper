@@ -17,6 +17,7 @@
 \usepackage{float}
 \usepackage{hyperref}
 \usepackage{url}
+\usepackage[font={footnotesize}]{caption}
 
 
 \DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n} 
@@ -48,7 +49,7 @@
 \newcommand{\dtder}[2]{\frac{\dd^2 #1}{\dd #2^2}}
 \newcommand{\dpder}[2]{\frac{\partial^2 #1}{\partial #2^2}}
 \newcommand{\intas}{ \int_{-\infty}^\infty}
-\newcommand{\npar}{\\ \\ \noindent}
+\newcommand{\npar}{\\[0.5cm] \noindent}
 
 
 \begin{document}
@@ -95,7 +96,7 @@ The data we will be discussing is provided in Figure \ref{HtoZZ}, which depicts 
 \end{align}
 The strategies for eliminating these background processes will be further discussed in Section \ref*{comp_tech}.
 \npar
-The kinematics of the $H \to ZZ \to 4 \ell$ system can be solved completely in the rest frame of the Higgs using only seven parameters: the invariant masses of the lepton pairs and five angles \cite{new_higgs}, known as Cabibbo-Maksymowicz (CM) angles\cite{higgs_angles}. These angles are defined in Table \ref{angle_table} and Figure \ref{angle_fig}. \\ \\
+The invariant masses of the lepton products is determined using relativistic kinematics. The kinematics of the $H \to ZZ \to 4 \ell$ system can be solved completely in the rest frame of the Higgs using only seven parameters: the invariant masses of the lepton pairs and five angles \cite{new_higgs}, known as Cabibbo-Maksymowicz (CM) angles\cite{higgs_angles}. These angles are defined in Table \ref{angle_table} and Figure \ref{angle_fig}. It is interesting to note that the CMS collaboration did not consider the momentum of the $ZZ$ system, due to the dependence on the production mechanism and the additional complications of modeling the QCD effects\cite{new_higgs}. \\ \\
 \begin{table}[h!]
 \centering
 \begin{tabular}{|c|l|}
@@ -118,7 +119,7 @@ $\phi_2$ &  The azimuthal decay angle of the $\ell_2^-$ in the $Z_2$ rest frame.
 \label{angle_fig}
 \end{figure}
 \noindent
-Armed with an understanding of the parameters associated with identifying the Higgs boson via the $H \to ZZ \to 4 \ell$ decay mode, we will explore the design of the CMS experiment and identify what techniques are used to capture this data.
+Armed with an understanding of the parameters associated with identifying the Higgs boson via the $H \to ZZ \to 4 \ell$ decay mode, we can now explore the design of the CMS experiment and identify what techniques are used to capture this data.
 
 \section{Design of the Compact Muon Solenoid}
 
@@ -138,13 +139,21 @@ The CMS experiment is designed to identify approximately 1000 charged particles 
 \item Good missing-transverse-energy and dijet-mass resolution.
 \end{itemize}
 \noindent
-The heart of the CMS experiment is the superconducting solenoid, which is sandwiched between the calorimeters on the interior of the experiment, and the muon detectors on the exterior. The solenoid provides a substantial magnetic field of 4T to determine the momentum of the charged particles and the muons.
+The heart of the CMS experiment is the superconducting solenoid, which is sandwiched between the calorimeters on the interior of the experiment, and the muon detectors on the exterior\cite{cms_design}. The solenoid provides a substantial magnetic field of 4T which is used to determine the momentum of charged particles and muons \cite{physics_requirements}. 
+\npar
+For analyzing the trajectories of leptons produced in the golden decay channel, data from nearly all of the sensors in the CMS experiment must be employed\cite{cms_tdr}.
+\subsection{Tracker}
 \subsection{Electromagnetic Calorimeter}
 \subsection{Muon Detectors}
 
 
 \section{Computational Techniques}
 \label{comp_tech}
+\subsection{CMS Software Architecture}
+\subsection{Event Filter}
+\subsection{Detector Description}
+\subsection{Simulation}
+\subsection{$H \to 4 \ell$ Analysis Code}
 \section{Conclusion}
 
 
@@ -157,7 +166,16 @@ The heart of the CMS experiment is the superconducting solenoid, which is sandwi
 \item Should the sources be organized in the order they were cited, or by author's last name?
 \item In this paper, particles are identified in italics because \LaTeX \; automatically italicizes characters in math mode. Is this standard notation, or should I make an effort to unitalicize particle symbols?
 \item I feel as if I am following the CMS collaborations paper, "Observation of a New Boson at a Mass of 125 Gev with the CMS Experiment at the LHC" too closely, as I have to cite it often. Is this inappropriate for this assignment? Is there a slight modification I can make to my topic to ensure that I don't just restate the work of the CMS collaboration, or is such a situation unavoidable when doing a research paper such as this?
+\item Is it proper to cite source code in this context? I'm not quite sure I want to do that yet, but do you have any experience in these matters?
+
+
  
 \end{enumerate}
+\section{Other Remarks}
+\begin{enumerate}
+\item For convenience, a copy of all the sources I cited is available at \url{https://github.com/byrdie/PHSX_451_final_paper/tree/master/sources}
+\item Please let me know if I am straying too far into Jackson Remington's territory on this project. I have been communicating with him, and it seems that he is focusing more on the theoretical side. If you find that our topics are overlapping by too much I would be happy to modify my paper to avoid redundancy.
+\end{enumerate}
+
 
 \end{document}

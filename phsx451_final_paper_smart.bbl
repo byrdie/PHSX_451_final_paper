@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{website:higgs_press}
 CERN.
@@ -62,5 +62,20 @@ CMS Collaboration.
 \newblock The {CMS} experiment at the {CERN} {LHC}.
 \newblock {\em Journal of Instrumentation}, 3(08), August 2008.
 \newblock \url{http://stacks.iop.org/1748-0221/3/i=08/a=S08004}.
+
+\bibitem{physics_requirements}
+T.S. Virdee.
+\newblock Physics requirements for the design of the {ATLAS} and {CMS}
+  experiments at the {Large Hadron Collider}.
+\newblock {\em Philosophical Transactions of the Royal Society}, 370:876--891,
+  2012.
+\newblock
+  \url{http://rsta.royalsocietypublishing.org/content/roypta/370/1961/876.full.pdf}.
+
+\bibitem{cms_tdr}
+CMS Collaboration.
+\newblock C{MS} physics technical design report.
+\newblock Technical report, CERN, February 2006.
+\newblock \url{http://cds.cern.ch/record/922757/files/lhcc-2006-001.pdf}.
 
 \end{thebibliography}
