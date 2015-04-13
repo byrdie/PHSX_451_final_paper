@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.13)  13 APR 2015 06:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.13)  13 APR 2015 09:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -944,28 +944,32 @@ Package pdftex.def Info: images/HtoZZ.png used on input line 84.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 95--112
+Underfull \hbox (badness 10000) in paragraph at lines 95--113
 
  []
 
-[2] <images/HtoZZ_angles.png, id=95, 1315.91624pt x 651.43375pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--113
+
+ []
+
+[2] <images/HtoZZ_angles.png, id=92, 1315.91624pt x 651.43375pt>
 File: images/HtoZZ_angles.png Graphic file (type png)
 
 <use images/HtoZZ_angles.png>
 Package pdftex.def Info: images/HtoZZ_angles.png used on input line 116.
-(pdftex.def)             Requested size: 375.80544pt x 186.03827pt.
+(pdftex.def)             Requested size: 328.82707pt x 162.7785pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/cms_persp.png, id=98, 1300.86pt x 907.39pt>
+[3 <./images/HtoZZ.png>] <images/cms_persp.png, id=102, 1300.86pt x 907.39pt>
 File: images/cms_persp.png Graphic file (type png)
- <use images/cms_persp.png>
-Package pdftex.def Info: images/cms_persp.png used on input line 127.
-(pdftex.def)             Requested size: 422.77664pt x 294.89825pt.
 
-[3 <./images/HtoZZ.png>] [4 <./images/HtoZZ_angles.png> <./images/cms_persp.png
->]
+<use images/cms_persp.png>
+Package pdftex.def Info: images/cms_persp.png used on input line 127.
+(pdftex.def)             Requested size: 399.29463pt x 278.51886pt.
+ [4 <./images/HtoZZ_angles.png> <./images/cms_persp.png>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 135.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -998,7 +1002,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--22
 dnat = 1428788130 _
  []
 
-
+[5]
 Underfull \hbox (badness 3019) in paragraph at lines 31--37
 []\OT1/cmr/m/n/12 J.F. Gu-nion, G.L. Kane, and Jose Wudka.  Search tech-niques 
 for charged
@@ -1047,26 +1051,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--45
 3-[]2 . pdf*[]hmac =
  []
 
-[5])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 161.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 163.
  [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 163.
  (./phsx451_final_paper_smart.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
-Package rerunfilecheck Info: File `phsx451_final_paper_smart.out' has not chang
-ed.
-(rerunfilecheck)             Checksum: D8936D3449FA2D7CCD4D3A9235BE11A7;536.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 163.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 163.
+
+
+Package rerunfilecheck Warning: File `phsx451_final_paper_smart.out' has change
+d.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `phsx451_final_paper_smart.out':
+(rerunfilecheck)             Before: D8936D3449FA2D7CCD4D3A9235BE11A7;536
+(rerunfilecheck)             After:  D2B15202CBABD6D29D06C9884FEEB0C3;677.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 163.
  ) 
 Here is how much of TeX's memory you used:
- 16832 strings out of 493304
- 322485 string characters out of 6139871
- 377000 words of memory out of 5000000
- 20002 multiletter control sequences out of 15000+600000
+ 16833 strings out of 493304
+ 322504 string characters out of 6139871
+ 378000 words of memory out of 5000000
+ 20001 multiletter control sequences out of 15000+600000
  16368 words of font info for 67 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 39i,10n,41p,10440b,857s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,10n,41p,10440b,856s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texli
@@ -1077,10 +1088,10 @@ pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt12.pfb>
-Output written on phsx451_final_paper_smart.pdf (6 pages, 961218 bytes).
+Output written on phsx451_final_paper_smart.pdf (6 pages, 961906 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 162 compressed objects within 2 object streams
- 39 named destinations out of 1000 (max. 500000)
+ 191 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
  88 words of extra memory for PDF output out of 10000 (max. 10000000)
 
